@@ -3,9 +3,11 @@
 @font-face {font-family: Metropolis; src: url("../fonts/metropolis/metropolis-regular.otf");}
 @font-face {font-family: Metropolis; font-weight: light; src: url("../fonts/metropolis/metropolis-light.otf");}
 @font-face {font-family: Artisan; src: url("../fonts/artisan.otf")}
+@font-face {font-family: LiGuoFu; src: url("../fonts/Li\ Guofu.TTF")}
+@font-face {font-family: DiBiLiMa; src: url("../fonts/逗比莉麻体.ttf")}
 
 /* Navigation Bar. */
-ul
+.navbar
 {
     list-style-type: none;
     margin: 0;
@@ -21,9 +23,15 @@ ul
     max-width: none;
 }
 
+.navbar.dark
+{
+    background-color: black;
+}
+
 li
 {
     float: left;
+    background-color: transparent;
 }
 
 li a
@@ -33,6 +41,13 @@ li a
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.darklink
+{
+    color: white;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -41,41 +56,22 @@ li a:hover
     background-color: rgba(255, 170, 80, 0.2);
 }
 
-.navbar
-{
-    margin: 0;
-}
-
-.active
+.current
 {
     background-color: rgba(255, 170, 80, 0.5);
 }
 
-body, html
+body
 {
     height: 100%;
-    color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
 
-p, h1, h2, h3, h4, h5, h6
+p, h1
 {
     margin-left: 20px;
     margin-right: 20px;
-}
-
-h1
-{
-    font-family: Metropolis;
-    font-size: 60px;
-    font-weight: normal;
-}
-
-h2
-{
-    font-size: 35px;
-    font-weight: normal;
 }
 
 address
@@ -84,20 +80,43 @@ address
     padding-bottom: 20px;
 }
 
+.wip
+{
+    font-family: Metropolis;
+    font-weight: light;
+    font-size: 14pt;
+}
+
+.wip.chinese
+{
+    font-family: DiBiLiMa;
+    font-size: 14pt;
+}
+
 hr
 {
     height: 1px;
-    border-top: none;
+    border: none;
     width: 95%;
-    color: whitesmoke;
+    background-color: black;
     margin-bottom: 20px;
+}
+
+.emoji-button
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-top: 9px;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 
 button
 {
     border: none;
-    outline: none;
-    padding: 13px 8px;
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 /* ---------- DROPDOWN MENU ---------- */
@@ -105,12 +124,13 @@ button
 /* Dropdown Button */
 .dropbtn
 {
-    background-color: whitesmoke;
+    background-color: transparent;
     color: rgb(90, 55, 50);
     padding: 14px 16px;
     font-size: 16px;
-    border: none;
-    width: 123px;
+    width: 115.3px;
+    font-size: 8pt;
+    font-weight: bold;
 }
   
 /* The container <div> - needed to position the dropdown content */
@@ -134,7 +154,7 @@ button
 /* Links inside the dropdown */
 .dropdown-content a
 {
-    color: black;
+    color: rgb(90, 55, 50);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -163,6 +183,8 @@ button
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    color:black
 }
 
 .theme.dark
@@ -178,4 +200,6 @@ button
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    color: white
 }

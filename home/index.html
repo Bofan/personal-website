@@ -7,48 +7,47 @@
         <title>Bofan Chen</title>
         <link rel = "stylesheet" href = "style.css">
         <link rel = "shortcut icon" href = "../graphics/favicon.ico"/>
+        <meta charset = "utf-8">
     </head>
 
     <body>
         <!-- Site navigation menu -->
         <ul class = "navbar">
-            <li class = "active"><a href = "homepage.html">Home</a></li>
+            <li class = "current navlink"><a href = "homepage.html">HOME</a></li>
             <li class = "dropdown">
-                <button class="dropbtn">Pictures</button>
+                <button class="dropbtn">PICTURES</button>
                 <div class="dropdown-content">
-                    <a href="../art/index.html">Art</a>
-                    <a href="../photography/index.html">Photography</a>
+                    <a href="../art/index.html">ART</a>
+                    <a href="../photography/index.html">PHOTOGRAPHY</a>
                 </div>
             </li>
-            <li><a href="../programming/index.html">Programming</a></li>
-            <li><a href="../writing/index.html">Writing</a></li>
-            <li style = "float:right">
-              <a href="../contact/index.html">Contact</a></li>
-            <li style = "float:right">
-              <a href="../resume/index.html">R&#233sum&#233</a></li>
+            <li class = "navlink"><a href="../programming/index.html">PROGRAMMING</a></li>
+            <li class = "navlink"><a href="../writing/index.html">WRITING</a></li>
+            <li class = "navlink" style = "float:right">
+              <a href="../contact/index.html">CONTACT</a></li>
+            <li class = "navlink" style = "float:right">
+              <a href="../resume/index.html">R&#201SUM&#201</a></li>
             <li style = "float:right; font-size: 10pt"
                 title = "Chinese">
-              <button id = "language" onclick = "chiMode();chiIcon();">
+              <button class = "emoji-button" id = "lang-button" onclick = "chiMode();chiIcon();">
                   &#127540</a></button>
               <!--Alternatively, &#127374-->
             <li style = "float:right; font-size: 10pt"
                 title = "Dark Mode">
-                <button id = "dark-button" onclick = "darkMode();darkIcon();">
+                <button class = "emoji-button" id = "dark-button" onclick = "darkMode();darkIcon();">
                   &#127769</button>
         </ul>
 
         <!-- Main page content. -->
-        <h1>Hello! &#128075;&#127996;</h1>
-        <h2 style = "font-family:Artisan">&#10024Welcome~&#10024</h2>
-
-        <h3>I have no idea what I'm doing.</h3>
-
-        <p>Please help.</p>
+        <h1 style = 
+          "font-family:Artisan; font-size:80px; font-weight:normal; line-height:50pt; margin-top:80pt; margin-left:50pt">
+          Welcome~!</h1>
+        <p class = "wip">This is a &#10024work in progress&#10024.</p>
 
         <hr>
 
         <!-- Sign and date the page, it's only polite! -->
-        <address>Site Last Updated 11 January 2021<br>
+        <address style = "font-size:10pt">Site Last Updated 20210802<br>
         - Bofan</address>
     </body>
 </html>
